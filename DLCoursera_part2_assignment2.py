@@ -92,7 +92,7 @@ def forward_propag_with_dropout(params,X,keep_pro):
 
 	return Al,caches
 
-def linear_backward_with_L2_reg(dz,cache,keep_pro):
+def linear_backward_with_dropout(dz,cache,keep_pro):
 	"""
 	Implement the backward propagation of linear part
 
@@ -107,7 +107,7 @@ def linear_backward_with_L2_reg(dz,cache,keep_pro):
 
 	return dw,db,dA_pre
 
-def linear_activation_backward_with_L2_reg(dA,cache,activation,keep_pro):
+def linear_activation_backward_with_dropout(dA,cache,activation,keep_pro):
 	"""
 	Implement the backward propagation of neural unit
 	"""
